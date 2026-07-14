@@ -1,0 +1,59 @@
+-size: 15px;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.btn-emerald { background: transparent; border: 2px solid var(--emerald-glow); color: var(--emerald-glow); }
+.btn-emerald:hover { background: var(--emerald-glow); color: #fff700; box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3); }
+
+.btn-diamond { background: transparent; border: 2px solid var(--diamond-glow); color: var(--diamond-glow); }
+.btn-diamond:hover { background: var(--diamond-glow); color: #ffffff; box-shadow: 0 4px 15px rgba(0, 191, 255, 0.3); }
+
+.btn-gold { background: transparent; border: 2px solid var(--gold-glow); color: var(--gold-glow); }
+.btn-gold:hover { background: var(--gold-glow); color: #05060a; box-shadow: 0 4px 15px rgba(255, 170, 0, 0.3); }
+
+.btn-iron { background: transparent; border: 2px solid var(--iron-glow); color: var(--iron-glow); }
+.btn-iron:hover { background: var(--iron-glow); color: #05060a; box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); }
+
+/* --------------------------------------------------------------------------
+   پیام نوتیفیکیشن کپی موفقیت‌آمیز آی‌پی (Toast)
+   -------------------------------------------------------------------------- */
+.toast-notification {
+    position: fixed;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--emerald-glow);
+    color: #ffe100;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 15px;
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+    transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 99999;
+}
+
+.toast-notification.show {
+    bottom: 40px;
+}
+
+/* --------------------------------------------------------------------------
+   رسپانسیو و بهینه‌سازی کامل روی موبایل و تبلت
+   -------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+    .shop-container { gap: 25px; }
+    .rank-card { width: calc(50% - 20px); max-width: 340px; }
+}
+
+@media (max-width: 768px) {
+    .header-container { flex-direction: column; gap: 15px; text-align: center; padding: 20px; }
+    .nav-menu ul { gap: 20px; flex-wrap: wrap; justify-content: center; }
+    .hero-section { height: auto; padding: 120px 20px 80px 20px; }
+    .hero-title { font-size: 34px; }
+    .hero-subtitle { font-size: 16px; }
+    .btn { margin: 10px 0; width: 100%; }
+    .shop-section { padding: 80px 20px; }
+    .shop-container { gap: 35px; }
+    .rank-card { width: 100%; max-width: 360px; }
+}
